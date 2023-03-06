@@ -1,21 +1,15 @@
-import axios from "axios"
-import { useQuery } from "react-query"
+import { dataFetching } from "./api/dataFetching"
+
+
+const key = import.meta.env.VITE_REACT_APP_API_KEY
+const locate = 'santa helena de goias' //auto:ip
+const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${locate}&aqi=no&lang=pt`
 
 function App() {
 
-  const key = import.meta.env.VITE_REACT_APP_API_KEY
-  const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${key}&q=auto:ip&aqi=no&lang=pt`
-
-  const { data, isFetching } = useQuery('weather',    async () => {
-    const response = await axios.get(apiUrl)
-    return response.data
-  },{refetchOnWindowFocus: false,})
-  
-  try {
-    console.log(data)
-  } catch (err) {
-    console.log(err)
-  }
+  const res = dataFetching( apiUrl)
+  const data = res.data
+  const isFetching = res.isFetching
 
   return (
     <> 
