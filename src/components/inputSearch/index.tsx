@@ -1,5 +1,5 @@
 import { KeyboardEvent, useState } from "react"
-import { InputContainerStyled, InputIconStyled, InputTextStyled } from "./inputSearch"
+import { InputContainerStyled, InputIconStyled, InputTextStyled } from "./inputSearch.styled"
 
 
 interface InputSearchType {
