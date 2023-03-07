@@ -11,7 +11,7 @@ export function InputSearch({ setSearch }:InputSearchType) {
   const [valid, setValid] = useState(true)
 
   function handleSetValue(e: KeyboardEvent<HTMLInputElement>) {
-    const value = e.currentTarget.value
+    const value = e.currentTarget.value.trim()
     
     if (e.key === 'Enter') {
       console.log('enter aqui')
