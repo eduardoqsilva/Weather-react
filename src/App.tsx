@@ -31,7 +31,9 @@ function App() {
         <InputSearch setSearch={setSearch}/>
         <Weather 
           urlIcon={data?.current.condition.icon}
-          city={`${data?.location.name} ${data?.location.region} ${data?.location.country}`}
+          city={`${data?.location.name ? data?.location.name + ',' : ''}
+                ${data?.location.region ? data?.location.region + ',' : ''}
+                ${data?.location.country}`}
           text={data?.current.condition.text}
           temp={data?.current.feelslike_c}
         />
