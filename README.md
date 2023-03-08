@@ -1,7 +1,7 @@
 
 # Weather App
 
-Um app de clima feito com react, TypeScript e styled-componentes usando bibliotecas como axios e react-query para fazer requisições.
+Um app de clima feito com react, TypeScript e styled-components usando bibliotecas como axios e react-query para fazer requisições.
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
