@@ -32,6 +32,7 @@ export const InputContainerStyled = styled.div <InputContainerType>`
   display: flex;
   align-items: center;
   gap: 1rem;
+  justify-self: end;
 
   ${(props) => props.valid ? '' : 
     css`

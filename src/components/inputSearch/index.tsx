@@ -18,6 +18,7 @@ export function InputSearch({ setSearch }:InputSearchType) {
       if(value.length >= 3) {
         setSearch(value)
         setValid(true)
+        e.currentTarget.value = ''
       }
       else {
         setValid(false)
