@@ -43,7 +43,10 @@ export const InputContainerStyled = styled.div <InputContainerType>`
       animation-iteration-count: 3;
     `
   }
-  
+  @media (max-width: 750px) {
+    justify-self: center;
+    width: 100%;
+  }
 `
 export const InputIconStyled = styled.div`
   width: 1.8rem;

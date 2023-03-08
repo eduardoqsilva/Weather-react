@@ -9,6 +9,7 @@ export const WeatherWrapperStyled = styled.article`
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.8px);
   -webkit-backdrop-filter: blur(4.4px);
+  padding: 1rem;
   
   display: flex;
   flex-direction: column;
@@ -55,6 +56,14 @@ export const WeatherWrapperStyled = styled.article`
   & span {
     font-weight: 500;
     font-size: 1.2rem;
+    text-align: center;
+  }
+  @media (max-width: 500px) {
+   .text {
+    & h1 {
+      font-size: 3rem;
+    }
+   }
   }
 `
 interface IconWeatherType {
@@ -72,4 +81,9 @@ export const IconWeather = styled.div<IconWeatherType>`
   position: absolute;
   top: 1rem;
   right: 2rem;
+
+  @media (max-width: 500px) {
+    width: 3rem;
+    height: 3rem;
+  }
 `
