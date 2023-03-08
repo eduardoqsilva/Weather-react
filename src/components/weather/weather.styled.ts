@@ -5,8 +5,9 @@ export const WeatherWrapperStyled = styled.article`
   max-width: 500px;
   height: 300px;
   border-radius: 10px;
+  background: rgba(0,0,0, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.4px);
+  backdrop-filter: blur(4.8px);
   -webkit-backdrop-filter: blur(4.4px);
   
   display: flex;
@@ -16,6 +17,7 @@ export const WeatherWrapperStyled = styled.article`
   gap: 2rem;
 
   font-family: 'Poppins', sans-serif;
+  color: #fff;
   
   position: relative;
 

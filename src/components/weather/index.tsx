@@ -13,7 +13,7 @@ export function Weather({ urlIcon, temp, text, city }: weatherType) {
     <WeatherWrapperStyled>
       <IconWeather urlIcon={urlIcon}/>
       <div className="text">
-        <h1>{Math.round(temp)}</h1>
+        <h1>{Math.round(temp).toString()}</h1>
         <span>{text}</span>
       </div>
       <span>🚩{city}</span>
