@@ -7,12 +7,12 @@ export function dataFetching(location:string) {
   //removendo acentos e colocando em lower case
   location = location.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
-  const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${location ? location : 'sao paulo'}&aqi=no&lang=pt`
+  const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${location ? location : 'auto:ip'}&aqi=no&lang=pt`
   const { data, isFetching, refetch } = useQuery('weather', async () => {
     const response = await axios.get(apiUrl)
     return response.data
   },{
-    refetchOnWindowFocus: false,
+    refetchOnWindowFocus: true,
     staleTime: 60000 * 60,
   })
 
