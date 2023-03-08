@@ -11,10 +11,6 @@ Um app de clima feito com react, TypeScript e styled-componentes usando bibliote
 Aprendi  a realizar consultas de informações em APIs e a usar bibliotecas como react-query e axios para fazer as requisições. 
 
 
-## Demonstração
-
-![App gif](https://cdn.discordapp.com/attachments/1068986684215132230/1083144407454326854/r.gif)
-
 
 
 ## Screenshots
